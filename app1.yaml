@@ -32,4 +32,18 @@ spec:
         - containerPort: 5000
       restartPolicy: Always
       schedulerName: default-scheduler
-      securityContext: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: app1
+  name: app1
+  namespace: default
+spec:
+  ports:
+  - port: 5000
+    protocol: TCP
+  selector:
+    app: app1
+  type: NodePort
