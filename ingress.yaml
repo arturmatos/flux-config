@@ -16,4 +16,8 @@ spec:
       - path: /app2/*
         backend:
           serviceName: app2
-          servicePort: 5000	  
+          servicePort: 5000
+      - path: /app3/*
+        backend:
+          serviceName: app3
+          servicePort: 5000	  	  
