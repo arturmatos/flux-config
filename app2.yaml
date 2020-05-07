@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: app2
-        image: docker.io/arturmatos/simple-web-app:3.0.0
+        image: docker.io/arturmatos/simple-web-app:2.0.0
         ports:
         - containerPort: 5000
       restartPolicy: Always
