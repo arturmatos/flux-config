@@ -5,7 +5,6 @@ metadata:
   annotations:
     deployment.kubernetes.io/revision: "1"
     fluxcd.io/automated: "true"
-    fluxcd.io/tag.app: semver:~2.0
     fluxcd.io/tag.app2: glob:2.0.*
   generation: 1
   labels:
