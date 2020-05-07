@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -29,7 +30,7 @@ spec:
     spec:
       containers:
       - name: app2
-        image: docker.io/arturmatos/simple-web-app:latest
+        image: docker.io/arturmatos/simple-web-app:2.0.0
         ports:
         - containerPort: 5000
       restartPolicy: Always
